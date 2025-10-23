@@ -10,7 +10,7 @@ public class EstadoDeSalud {
     private ComposicionCorporal composicion;
     private Alimentacion alimentacion;
     private Higiene higiene;
-    private Personas persona; // Este campo ahora se inicializará correctamente
+    private Personas persona;
 
 
     public EstadoDeSalud(String archivoComposicion, String archivoAlimentacion, String archivoHigiene, Personas persona) {
@@ -111,3 +111,4 @@ public class EstadoDeSalud {
     }
 
 }
+
