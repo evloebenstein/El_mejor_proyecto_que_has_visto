@@ -14,7 +14,7 @@ public class EstadoDeSalud {
 
 
     public EstadoDeSalud(String archivoComposicion, String archivoAlimentacion, String archivoHigiene, Personas persona) {
-        this.persona = persona; // Se asigna el objeto Persona recibido
+        this.persona = persona;
         
         // Se obtiene el RUT directamente del objeto Persona para asegurar consistencia
         String rutPersona = persona.getRut(); 
@@ -35,7 +35,7 @@ public class EstadoDeSalud {
                         Float.parseFloat(fila[4]),
                         Float.parseFloat(fila[5]),
                         Float.parseFloat(fila[6]),
-                        this.persona.getPeso() // <-- CORREGIDO: Ahora 'persona' no es null
+                        this.persona.getPeso() 
                 );
             }
             return null;
@@ -109,4 +109,5 @@ public class EstadoDeSalud {
     public void mostrarEstado() {
         getEstadoCompleto().forEach((k,v) -> System.out.println(k + ": " + v));
     }
+
 }
